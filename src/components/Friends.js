@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 
 const initalFriends = [
   'Kolby Thompson',
@@ -114,7 +114,7 @@ export default function Friends() {
   // }, [filter, friends]);
 
   const visibleFriends = friends.filter(friend =>
-    friend.toLowerCase().includes(filter),
+    friend.toLowerCase().includes(filter)
   );
 
   return (
